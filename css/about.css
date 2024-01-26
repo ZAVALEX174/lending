@@ -1,0 +1,80 @@
+.about {
+  padding: 92px 0 92px;
+  background-image: linear-gradient(
+    #222 0%,
+    #222 50%,
+    #f0f4f4 50%,
+    #f0f4f4 100%
+  );
+}
+
+.about__bg {
+  display: flex;
+  position: relative;
+  min-height: 56vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url('../images/red-bg.svg');
+}
+
+.about__bg::before {
+  content: '';
+  position: absolute;
+  background: url('../images/tirre.svg') center/cover no-repeat;
+  pointer-events: none;
+  height: 30vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  transform: translateY(-40%) rotate(180deg);
+}
+
+.about__bg::after {
+  content: '';
+  position: absolute;
+  background: url('../images/tirre.svg') center/cover no-repeat;
+  pointer-events: none;
+  height: 33vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(40%);
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.about__title {
+  padding: 14px 60px 14px 0;
+  justify-self: end;
+  max-width: min-content;
+  text-align: right;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+
+  border-right: 2px solid #fff;
+}
+
+.about__title-text_color-white {
+  color: #fff;
+}
+
+.about__title-text_color-black {
+  color: #222;
+}
+
+.about__text {
+  padding: 14px 0 14px 60px;
+  justify-self: start;
+  max-width: 510px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+}
