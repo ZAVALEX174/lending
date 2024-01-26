@@ -2,3 +2,24 @@
   padding-top: 40px;
   background: #222;
 }
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .header__logo {
+} */
+
+.header__link {
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #f0f4f4;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
