@@ -34,3 +34,27 @@
   grid-area: developers;
   justify-self: right;
 }
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 24px 0 20px;
+  }
+
+  .footer__container {
+    grid-template-areas:
+      'logo .'
+      'copyright .'
+      'developers .';
+    gap: 40px;
+  }
+
+  .footer__logo {
+    max-width: 230px;
+    width: 100%;
+    grid-area: logo;
+  }
+
+  .footer__developers {
+    justify-self: left;
+  }
+}
