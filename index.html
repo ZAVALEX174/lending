@@ -58,7 +58,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="container">
           <h2 class="contact__title">
             <span class="contact__title-text contact__title-text_color-black"
@@ -387,7 +387,7 @@
                 <span>Назад</span>
               </button>
 
-              <button class="form__btn form__btn_next">
+              <button class="form__btn form__btn_next" disabled>
                 <span>Далее</span>
                 <svg
                   width="13"
@@ -412,13 +412,19 @@
           src="./images/logo.svg"
           alt="Логотип компании AutoService"
           class="footer__logo" />
-        <div class="footer__wrapper">
-          <p class="footer__copyright">&copy;&nbsp;AutoService, 2024</p>
+        <!-- <div class="footer__wrapper"> -->
+        <p class="footer__copyright">&copy;&nbsp;AutoService, 2024</p>
         <ul class="footer__developers">
-          <li class="footer__developer">Designer: Anastasia Ilina</li>
-          <li class="footer__developer">Developer:</li>
+          <li class="footer__developer">
+            <a href="#!" class="footer__developer-link"
+              >Designer: Anastasia Ilina</a
+            >
+          </li>
+          <li class="footer__developer">
+            <a href="#!" class="footer__developer-link">Developer:</a>
+          </li>
         </ul>
-        </div>
+        <!-- </div> -->
       </div>
     </footer>
   </body>

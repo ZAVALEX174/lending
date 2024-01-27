@@ -126,15 +126,24 @@
 }
 
 .form__input {
+  padding: 12px 20px;
+  border-radius: 8px;
+  /* opacity: 0.4; */
+  background: #f0f4f4;
+  border: 1px solid transparent;
   color: #222;
   font-size: 16px;
   font-weight: 400;
   line-height: 140%;
-  padding: 12px 20px;
-  border-radius: 8px;
-  opacity: 0.4;
+}
+
+.form__input:hover {
   background: #f0f4f4;
-  border: 1px solid transparent;
+}
+
+.form__input:focus-visible {
+  border: 1px solid #d0d0d0;
+  background: #f0f4f4;
 }
 
 .form__info {
